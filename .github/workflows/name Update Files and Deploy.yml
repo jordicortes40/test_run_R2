@@ -3,6 +3,8 @@ on:
     - cron: '5 12 * * *' # Runs every 5 minutes
   push:
     branches: main
+permissions:
+  contents: write
 
 jobs:
   import-data:
